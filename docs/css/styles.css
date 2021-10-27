@@ -11267,10 +11267,6 @@ section.resume-section .resume-section-content {
 }
 
 .masthead {
-    height: 100vh;
+    height: 70vh;
     min-height: 500px;
-    background-image: url('/docs/assets/img/background.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
