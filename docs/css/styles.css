@@ -11266,7 +11266,7 @@ section.resume-section .resume-section-content {
     }
 }
 
-.masthead {
-    height: 70vh;
+section.masthead {
+    height: 80vh;
     min-height: 500px;
 }
