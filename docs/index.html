@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/hero.css">
     <link rel="stylesheet" href="css/footer.css">
-    <script defer src="/js/app.js"></script>
+    <link rel="stylesheet" href="css/works.css">
+    <script defer src="js/app.js"></script>
 
 </head>
 
@@ -19,8 +20,8 @@
     <header class="top-header">
         <nav class="top-nav">
             <a href="index.html" class="logo">
-                <img height="40" src="assets/Logo_Color.png" alt="Rocio Campo" />
-                <img height="30" src="assets/Logo_Name.png" alt="Rocio Campo" class="logo-name" />
+                <img height="40" src="assets/Logo_Color.png" alt="Rocio-Campo" />
+                <img height="30" src="assets/Logo_Name.png" alt="Rocio-Campo" class="logo-name" />
             </a>
             <button class="open-menu" aria-label="Burger menu">
                 <img src="assets/burger-icon.svg" alt="Open menu">
@@ -39,10 +40,11 @@
                     <a href="#" target="_blank">resume</a>
                 </li>
                 <li>
-                    <a href="#" class="selected-lang">english</a>
+                    <a href="index.html" class="selected-lang">english</a>
                 </li>
             </ul>
     </header>
+
 
 
 
@@ -63,48 +65,50 @@
     </section>
 
     <!-- works section -->
-    <section class="porfolio-works">
-        <div class="tile little-rescue">
-            <div class="front"></div>
-            <div class="back">
-                <h1 class="work-title">Little Rescue</h1>
-                <h2 class="work-subtitle">Mobile app</h2>
-            </div>
-        </div>
-        <div class="tile little-rescue">
-            <div class="front"></div>
-            <div class="back">
-                <h1 class="work-title">Little Rescue</h1>
-                <h2 class="work-subtitle">Mobile app</h2>
-            </div>
-        </div>
-        <div class="tile little-rescue">
-            <div class="front"></div>
-            <div class="back">
-                <h1 class="work-title">Little Rescue</h1>
-                <h2 class="work-subtitle">Mobile app</h2>
-            </div>
-        </div>
-        <div class="tile little-rescue">
-            <div class="front"></div>
-            <div class="back">
-                <h1 class="work-title">Little Rescue</h1>
-                <h2 class="work-subtitle">Mobile app</h2>
-            </div>
-        </div>
-        <div class="tile little-rescue">
-            <div class="front"></div>
-            <div class="back">
-                <h1 class="work-title">Little Rescue</h1>
-                <h2 class="work-subtitle">Mobile app</h2>
-            </div>
-        </div>
-        <div class="tile little-rescue">
-            <div class="front"></div>
-            <div class="back">
-                <h1 class="work-title">Little Rescue</h1>
-                <h2 class="work-subtitle">Mobile app</h2>
-            </div>
+    <section class="works">
+        <div class="portfolio-container">
+            <a class="portfolio-item" href="works/littleRescue.html">
+                <img src="assets/LittleRescue.png" alt="Little-Rescue">
+                <div class="portfolio-text">
+                    <h2 class="work-title">Little Rescue </h2>
+                    <h3 class="work-subtitle">Mobile app</h3>
+                </div>
+            </a>
+            <a class="portfolio-item" href="#">
+                <img src="assets/Escape.png" alt="Escape!">
+                <div class="portfolio-text">
+                    <h2 class="work-title">Escape!</h2>
+                    <h3 class="work-subtitle">Cardboard app </h3>
+                </div>
+            </a>
+            <a class="portfolio-item" href="#">
+                <img src="assets/Saturada.png" alt="Saturada">
+                <div class="portfolio-text">
+                    <h2 class="work-title">Saturada </h2>
+                    <h3 class="work-subtitle">GameGen Jam 2 </h3>
+                </div>
+            </a>
+            <a class="portfolio-item" href="#">
+                <img src="assets/XORivals.png" alt="XO-Rivals">
+                <div class="portfolio-text">
+                    <h2 class="work-title">XO Rivals</h2>
+                    <h3 class="work-subtitle">Unattended web multiplayer </h3>
+                </div>
+            </a>
+            <a class="portfolio-item" href="#">
+                <img src="assets/LoopingCrystal.png" alt="Looping-Crystal">
+                <div class="portfolio-text">
+                    <h2 class="work-title">Looping Crystal </h2>
+                    <h3 class="work-subtitle">GameGen Jam 1 </h3>
+                </div>
+            </a>
+            <a class="portfolio-item" href="#">
+                <img src="assets/Origins.png" alt="Origins">
+                <div class="portfolio-text">
+                    <h2 class="work-title">Origins</h2>
+                    <h3 class="work-subtitle">PC Multiplayer</h3>
+                </div>
+            </a>
         </div>
     </section>
 
@@ -114,14 +118,18 @@
     <div class="space-between"></div>
     <!-- Cosas para el footer -->
     <footer class="footer-info">
-        <p class="footer-text">Would you like to work together? I'd love to hear from you</p>
-        <div class="links-container">
-            <a class="links" href="https://www.linkedin.com/in/rociocampo">LINKEDIN <span class="linkedin">⇀,</span></a>
-            <a class="links" href="https://twitter.com/rociiio_campo">TWITTER <span class="twitter">⇀,</span></a>
-            <a class="links" href="https://rox06io.itch.io/">ITCH.IO <span class="itchio">⇀</span></a>
+        <div class="footer-container">
+            <p class="footer-text">Would you like to work together? I'd love to hear from you</p>
+            <div class="links-container">
+                <a class="links" href="https://www.linkedin.com/in/rociocampo" target="_blank">LINKEDIN <span
+                    class="linkedin">⇀,</span></a>
+                <a class="links" href="https://twitter.com/rociiio_campo" target="_blank">TWITTER <span
+                    class="twitter">⇀,</span></a>
+                <a class="links" href="https://rox06io.itch.io/" target="_blank">ITCH.IO <span class="itchio">⇀</span></a>
+            </div>
+            <a class="email-text" href="mailto:camporocio2000@gmail.com">camporocio2000@gmail.com</a>
+            <p class="copyright">© 2022 Rocio Campo</p>
         </div>
-        <a class="email-text" href="mailto:camporocio2000@gmail.com">camporocio2000@gmail.com</a>
-        <p class="copyright">© 2022 Rocio Campo</p>
     </footer>
 
 

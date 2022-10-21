@@ -1,6 +1,7 @@
 .hero {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
+    padding-left: 20px;
 }
 
 .hero-title {
@@ -38,7 +39,7 @@
     font-size: 20px;
     font-weight: 300;
     padding: 0.5em 2.5em;
-    margin: 10px;
+    margin: 10px auto;
     box-shadow: var(--shadow-elevation-medium);
     cursor: pointer;
     width: 360px;

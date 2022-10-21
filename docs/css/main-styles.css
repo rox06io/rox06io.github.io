@@ -25,6 +25,10 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 
 /* Body */
 
@@ -36,6 +40,7 @@ body {
     /* background-color: var(--section-color); */
     color: var(--text-color);
     padding-top: 200px;
+    padding-right: 0;
 }
 
 a {
