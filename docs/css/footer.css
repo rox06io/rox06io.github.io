@@ -46,14 +46,17 @@
 
 .linkedin {
     color: var(--section-color);
+    font-weight: 900;
 }
 
 .twitter {
     color: var(--twitter);
+    font-weight: 900;
 }
 
 .itchio {
     color: var(--itchio);
+    font-weight: 900;
 }
 
 @media only screen and (max-width: 950px) {
