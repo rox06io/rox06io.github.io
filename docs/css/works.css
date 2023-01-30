@@ -7,9 +7,10 @@
     .portfolio-container {
         width: 100%;
         display: grid;
-        grid-auto-flow: column;
+        place-items: center;
+        grid-auto-flow: row;
         grid-template-columns: repeat(3, 400px);
-        grid-template-rows: repeat(2, 300px);
+        grid-template-rows: repeat(3, 300px);
         gap: 30px;
     }
     
@@ -19,6 +20,7 @@
         overflow: hidden;
         border-radius: 5%;
         box-shadow: var(--shadow-elevation-medium);
+        margin-bottom: 1rem;
     }
     
     .portfolio-text {
@@ -72,6 +74,9 @@
         .portfolio-text {
             padding: 70px;
         }
+        .portfolio-item {
+            grid-row-gap: 50px;
+        }
     }
     
     @media screen and (max-width: 1470px) and (min-width: 650px) {
@@ -81,6 +86,9 @@
             padding: 0;
             margin: 10px auto;
             padding-left: 10vw;
+        }
+        .portfolio-item {
+            grid-row-gap: 30px;
         }
         .portfolio-text {
             padding: 70px;
