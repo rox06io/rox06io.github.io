@@ -1,139 +1,299 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Work - Rocio Campo</title>
     <link rel="icon" type="image/x-icon" href="/assets/Logo_ico.ico" />
-    <link rel="stylesheet" href="css/main-styles.css">
-    <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="css/hero.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/works.css">
-    <script defer src="js/app.js"></script>
-
+    <title>Rocio Campo - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/185ff8ed97.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <!-- header -->
-    <header class="top-header">
-        <nav class="top-nav">
-            <a href="index.html" class="logo">
-                <img height="40" src="assets/Logo_Color.png" alt="Rocio-Campo" />
-                <img height="30" src="assets/Logo_Name.png" alt="Rocio-Campo" class="logo-name" />
-            </a>
-            <button class="open-menu" aria-label="Burger menu">
-                <img src="assets/burger-icon.svg" alt="Open menu">
-            </button>
-            <ul class="menu">
-                <button class="close-menu" aria-label="Close menu">
-                    <img src="assets/close-icon.svg" alt="close menu">
-                </button>
-                <li>
-                    <a href="index.html" class="selected">work</a>
-                </li>
-                <li>
-                    <a href="about.html">about me</a>
-                </li>
-                <li>
-                    <a href="#" target="_blank">resume</a>
-                </li>
-                <li>
-                    <a href="index-es.html" class="selected-lang">english</a>
-                </li>
-            </ul>
-    </header>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="#header"><img src="assets/Logo_Color_Name_05.png" alt="Logo" class="logo"></a>
 
-
-
-
-    <!-- hero section -->
-    <section class="hero">
-        <div class="hero-info">
-            <h1 class="hero-title">Hi! I'm Rocio</h1>
-            <h2 class="hero-subtitle">UI/UX Designer & Game Designer</h2>
-            <ul class="btn-container">
-                <li>
-                    <button onclick="window.open('about.html','_self');">read more ⇀</button>
-                </li>
-                <li>
-                    <button onclick="window.open('#');">resume ⇀</button>
-                </li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- works section -->
-    <section class="works">
-        <div class="portfolio-container">
-            <a class="portfolio-item" href="works/little-rescue.html">
-                <img src="assets/LittleRescue.png" alt="Little-Rescue">
-                <div class="portfolio-text">
-                    <h2 class="work-title">Little Rescue </h2>
-                    <h3 class="work-subtitle">Mobile app</h3>
-                </div>
-            </a>
-            <a class="portfolio-item" href="works/escape.html">
-                <img src="assets/Escape.png" alt="Escape!">
-                <div class="portfolio-text">
-                    <h2 class="work-title">Escape!</h2>
-                    <h3 class="work-subtitle">Cardboard app </h3>
-                </div>
-            </a>
-            <a class="portfolio-item" href="works/saturada.html">
-                <img src="assets/Saturada.png" alt="Saturada">
-                <div class="portfolio-text">
-                    <h2 class="work-title">Saturada </h2>
-                    <h3 class="work-subtitle">GameGen Jam 2 </h3>
-                </div>
-            </a>
-            <a class="portfolio-item" href="works/xo-rivals.html">
-                <img src="assets/XORivals.png" alt="XO-Rivals">
-                <div class="portfolio-text">
-                    <h2 class="work-title">XO Rivals</h2>
-                    <h3 class="work-subtitle">Unattended web multiplayer </h3>
-                </div>
-            </a>
-            <a class="portfolio-item" href="works/looping-crystal.html">
-                <img src="assets/LoopingCrystal.png" alt="Looping-Crystal">
-                <div class="portfolio-text">
-                    <h2 class="work-title">Looping Crystal </h2>
-                    <h3 class="work-subtitle">GameGen Jam 1 </h3>
-                </div>
-            </a>
-            <a class="portfolio-item" href="works/origins.html">
-                <img src="assets/Origins.png" alt="Origins">
-                <div class="portfolio-text">
-                    <h2 class="work-title">Origins</h2>
-                    <h3 class="work-subtitle">PC Multiplayer</h3>
-                </div>
-            </a>
-        </div>
-    </section>
-
-
-
-
-    <div class="space-between"></div>
-    <!-- Cosas para el footer -->
-    <footer class="footer-info">
-        <div class="footer-container">
-            <p class="footer-text">Would you like to work together? I'd love to hear from you</p>
-            <div class="links-container">
-                <a class="links" href="https://www.linkedin.com/in/rociocampo" target="_blank">LINKEDIN <span
-                    class="linkedin">⇀,</span></a>
-                <a class="links" href="https://twitter.com/rociiio_campo" target="_blank">TWITTER <span
-                    class="twitter">⇀,</span></a>
-                <a class="links" href="https://rox06io.itch.io/" target="_blank">ITCH.IO <span class="itchio">⇀</span></a>
+                <ul id="sidemenu">
+                    <li></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p><i>UI/UX Designer & Game Designer</i></p>
+                <h1>Hello there! <br> I'm <span>Rocio</span> Campo</h1>
             </div>
-            <a class="email-text" href="mailto:camporocio2000@gmail.com">camporocio2000@gmail.com</a>
-            <p class="copyright">© 2022 Rocio Campo</p>
         </div>
-    </footer>
+    </div>
+
+    <!-- about -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="assets/personal.jpg" alt="Rocio">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <h4> What could I tell you about me?</h4>
+                    <p>
+                        In 2018, I started my degree in Madrid <i><b class="about-me-text">Game Development and Design</b></i>, where I found my role in the video game industry: Game Design.<br><br> My degree partners and I took a risk and made games
+                        together under the name <b class="about-me-text">Virtual Ravens Games</b>, and I discovered I had a true passion for <b class="about-me-text">UI/UX Design</b> as well as Game Design. Having the ability to empathize with users and
+                        anticipate their needs is one of my favorite things about this job.<br> My experience with Virtual Ravens exposed me to <i class="about-me-text">working as a team and leading it</i> (as well as trying the roles of producer and
+                        artist). When I'm not brainstorming new ideas, I like to watch series or spend time with my family. <br><br>Additionally, I speak <b class="about-me-text">Spanish natively</b> and have a <b class="about-me-text">B2 in English</b>                        .
+
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Tools</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Adobe Illustrator</span></li>
+                            <li><span>Figma</span></li>
+                            <li><span>Unity</span></li>
+                            <li><span>Adobe Photoshop</span></li>
+                            <li><span>Procreate</span></li>
+                            <li><span>Autodesk 3Ds Max</span></li>
+                            <li><span>Notion</span></li>
+                            <li><span>Trello</span></li>
+                            <li><span>Microsoft Office</span></li>
+                            <li><span>Github</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li>
+                                <span><b>Lead Game Designer & Producer</b> on Virtual Ravens Games</span>
+                                <br><i>2019 - Now</i>
+                                <br><br> Responsible for creating the game design, art and social media content, as well as managing the studio team
+                            </li>
+                            <li>
+                                <span><b>UI/UX Designer</b> on Gammera Nest</span>
+                                <br> <i>January - May 2022 </i>
+                                <br><br> Redesign of the branded content and interface of the game 'The Secret Trail of Moon'
+                                <br>(Intership Contract)
+                            </li>
+                            <li>
+                                <span><b>UI/UX Designer</b> on Gammera Nest</span>
+                                <br> <i>June - August 2022 </i>
+                                <br><br> Redesign of the branded content and interface of the game 'The Secret Trail of Moon'
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>
+                                <span><b>Game Development and Design Degree</b> in URJC</span>
+                                <br><i>2018 - 2023</i>
+                                <br><br> Computing degree dedicated to game design and development. Class president from 2020 to 2023
+                            </li>
+                            <li>
+                                <span><b>Baccalaureate</b> in La Inmaculada-Marillac</span>
+                                <br><i>2016 - 2018</i>
+                                <br><br> Technological baccalaureate. Class sub-president from 2017 to 2018
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- services -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-pen-nib"></i>
+                    <h2>Game Designer</h2>
+                    <p>My responsibilities as a Game Designer are to define the idea for the game, define the mechanics, create characters, balance the experience...</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-desktop"></i>
+                    <h2>UI/UX Designer</h2>
+                    <p>The goal of my UI/UX work is to provide an optimized experience for any type of user in an accessible environment</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-droplet"></i>
+                    <h2>Graphic Designer</h2>
+                    <p>While I am not working, I design the brands of my partners, as well as create brand content for my videogames</p>
+                    <a href="https://roxdev.artstation.com/" target="_blank">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My work</h1>
+            <div class="work-list">
+                <!-- visibles  -->
+                <div class="work">
+                    <img src="assets/jadoraki.png" alt="jadoraki">
+                    <div class="layer">
+                        <h3>Jadoraki</h3>
+                        <p>VR Game adventure </p>
+                        <a href="jadoraki.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/LittleRescue.png" alt="little-rescue">
+                    <div class="layer">
+                        <h3>Little Rescue</h3>
+                        <p>Mobile app</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/XORivals.png" alt="xo-rivals">
+                    <div class="layer">
+                        <h3>XO Rivals</h3>
+                        <p>Unattended multiplayer</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
 
 
+            </div>
+            <a class="btn" onclick="openWork('see-more')" id="read">See more</a>
+            <div class="work-list unactive" id="see-more">
+                <!-- invisibles  -->
+                <div class="work">
+                    <img src="assets/Escape.png" alt="escape!">
+                    <div class="layer">
+                        <h3>Escape!</h3>
+                        <p>Cardboard app</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
 
+                <div class="work">
+                    <img src="assets/Saturada.png" alt="saturada">
+                    <div class="layer">
+                        <h3>Saturada</h3>
+                        <p>Z Jam 2022</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/Origins.png" alt="origins">
+                    <div class="layer">
+                        <h3>Origins</h3>
+                        <p>PC Multiplayer</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/LoopingCrystal.png" alt="looping-crystal">
+                    <div class="layer">
+                        <h3>Looping Crystal</h3>
+                        <p>GameGen Jam 1</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact me</h1>
+                    <h4><i>Would you like to work together? I'd love to hear from you</i></h4>
+                    <p><i class="fa-solid fa-envelope"></i>camporocio2000@gmail.com</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/rociocampo" target="_blank"><i
+                                class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://rox06io.itch.io/" target="_blank"><i class="fa-brands fa-itch-io"></i></a>
+                        <a href="https://twitter.com/rociiio_campo" target="_blank"><i
+                                class="fa-brands fa-twitter"></i></a>
+                    </div>
+                    <a href="assets/RocioCampo_Designer_CV_eng.pdf" download class="btn btn2">Download CV</a>
+                </div>
+
+                <div class="contact-right">
+                    <form action="https://formspree.io/f/xqkoedra" method="POST">
+                        <input type="text" name="Name" placeholder="Your Name *" required />
+                        <input type="email" name="Email" placeholder="Your Email *" required />
+                        <textarea name="Message" rows="6" placeholder="Your Message *" required></textarea>
+
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© Rocio Campo 2023</p>
+            <div class="social">
+                <a href="https://www.linkedin.com/in/rociocampo" target="_blank"><i
+                        class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://rox06io.itch.io/" target="_blank"><i class="fa-brands fa-itch-io"></i></a>
+                <a href="https://twitter.com/rociiio_campo" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="mailto:camporocio2000@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        var unactiveWorks = document.getElementsByClassName("unactive")
+        var btn = document.getElementById("read")
+        var isClicked = true;
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        function openWork(workname) {
+            if (isClicked) {
+                for (unactiveWork of unactiveWorks) {
+                    unactiveWork.classList.remove("unactive");
+
+                }
+                isClicked = false;
+                btn.innerHTML = "Hide all"
+            } else {
+                document.getElementById(workname).classList.add("unactive");
+                isClicked = true;
+                btn.innerHTML = "See more"
+            }
+
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function closeMenu() {
+            sidemenu.style.right = "-200px";
+        }
+
+        function openMenu() {
+            sidemenu.style.right = "0";
+        }
+    </script>
 </body>
 
 </html>
